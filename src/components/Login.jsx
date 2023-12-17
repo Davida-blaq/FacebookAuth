@@ -9,11 +9,11 @@ const Login = () => {
   const [email, setEmail] = useState(""); // State for email
   const [password, setPassword] = useState(""); // State for password
 
-  // Handle form submission logic
   const handleLogin = (e) => {
     e.preventDefault();
-    // Implement your login logic here
-    // For example, you can check the credentials and redirect to the feed page
+  
+    // Replace the following lines with your actual login logic
+    // For example, you can check the credentials against your backend
     if (email === "user@example.com" && password === "password") {
       // Redirect to the feed page on successful login
       history.push("/feed");
@@ -22,6 +22,7 @@ const Login = () => {
       console.log("Login failed");
     }
   };
+  
 
   return (
     <div className="login">
